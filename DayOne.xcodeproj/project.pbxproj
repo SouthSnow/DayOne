@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8335210B1B05CA5900E0E2E6 /* 120 - iPhone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 833521091B05CA5900E0E2E6 /* 120 - iPhone@3x.png */; };
+		8335210D1B05CAEE00E0E2E6 /* 120 - iPhone@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 833521091B05CA5900E0E2E6 /* 120 - iPhone@3x.png */; };
+		8335210F1B05CBAD00E0E2E6 /* 120 - iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8335210E1B05CBAD00E0E2E6 /* 120 - iPhone@2x.png */; };
 		834D30A81A889A5500CC6AAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834D30A71A889A5500CC6AAD /* DetailViewController.m */; };
 		834D30AB1A889B6400CC6AAD /* FileDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 834D30AA1A889B6400CC6AAD /* FileDocument.m */; };
 		834D30AD1A88BBE200CC6AAD /* mark3.png in Resources */ = {isa = PBXBuildFile; fileRef = 834D30AC1A88BBE200CC6AAD /* mark3.png */; };
@@ -31,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833521091B05CA5900E0E2E6 /* 120 - iPhone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120 - iPhone@3x.png"; sourceTree = "<group>"; };
+		8335210E1B05CBAD00E0E2E6 /* 120 - iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120 - iPhone@2x.png"; sourceTree = "<group>"; };
 		834D30A61A889A5500CC6AAD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		834D30A71A889A5500CC6AAD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		834D30A91A889B6400CC6AAD /* FileDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDocument.h; sourceTree = "<group>"; };
@@ -93,6 +98,8 @@
 		83D134091A84AECA00A4892B /* DayOne */ = {
 			isa = PBXGroup;
 			children = (
+				833521091B05CA5900E0E2E6 /* 120 - iPhone@3x.png */,
+				8335210E1B05CBAD00E0E2E6 /* 120 - iPhone@2x.png */,
 				83D134381A84BDAD00A4892B /* DayOne.entitlements */,
 				83D1340E1A84AECA00A4892B /* AppDelegate.h */,
 				83D1340F1A84AECA00A4892B /* AppDelegate.m */,
@@ -226,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				834D30AD1A88BBE200CC6AAD /* mark3.png in Resources */,
+				8335210B1B05CA5900E0E2E6 /* 120 - iPhone@3x.png in Resources */,
 				83D134371A84BBE700A4892B /* Settings.bundle in Resources */,
+				8335210F1B05CBAD00E0E2E6 /* 120 - iPhone@2x.png in Resources */,
 				83D1341B1A84AECA00A4892B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8335210D1B05CAEE00E0E2E6 /* 120 - iPhone@3x.png in Sources */,
 				83D134101A84AECA00A4892B /* AppDelegate.m in Sources */,
 				83D1340D1A84AECA00A4892B /* main.m in Sources */,
 				83D1343B1A84C43600A4892B /* FileRepresentation.m in Sources */,

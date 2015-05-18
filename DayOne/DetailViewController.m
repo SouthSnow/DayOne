@@ -26,8 +26,7 @@
     
     [self addImageView];
 
-    
-    
+
     FileDocument *fileDocument = [[FileDocument alloc]initWithFileURL:_fileURL];
     fileDocument.delegate = self;
     _document = fileDocument;
@@ -59,7 +58,6 @@
     self.iamgeView.backgroundColor = [UIColor grayColor];
     self.iamgeView.userInteractionEnabled = YES;
     [self.iamgeView addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(getImage:)]];
-    
     
     
 }
