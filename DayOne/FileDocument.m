@@ -10,6 +10,8 @@
 
 NSString *textName = @"textName";
 NSString *imageName = @"imageName";
+NSString *imagedata = @"imagedata";
+
 
 @interface FileDocument ()
 @property (nonatomic, strong) NSFileWrapper *textFileWrapper;
@@ -68,17 +70,17 @@ NSString *imageName = @"imageName";
  
     if (self.myImage) {
         
-        NSData *data;
-        UIImage *image = [UIImage imageNamed:_imageStr];
-        if ([_imageStr hasSuffix:@"png"] || [_imageStr hasSuffix:@"PNG"]) {
-            
-        
-            data = UIImagePNGRepresentation(image);
-        }
-        else
-        {
-            data = UIImageJPEGRepresentation(image, 0);
-        }
+        NSData *data = self.imageData;
+//        UIImage *image = [UIImage imageNamed:_imageStr];
+//        if ([_imageStr hasSuffix:@"png"] || [_imageStr hasSuffix:@"PNG"]) {
+//            
+//        
+//            data = UIImagePNGRepresentation(image);
+//        }
+//        else
+//        {
+//            data = UIImageJPEGRepresentation(image, 0);
+//        }
         
         NSFileWrapper *imageFileWrapper = [dic objectForKey:imageName];
         if (imageFileWrapper) {
@@ -90,6 +92,7 @@ NSString *imageName = @"imageName";
         [imageFileWrapper setPreferredFilename:imageName];
         [_mainFileWrapper addFileWrapper:imageFileWrapper];
     
+        return data;
     }
     
     
@@ -143,7 +146,7 @@ NSString *imageName = @"imageName";
 - (UIImage*)myImage
 {
     if (_img) {
-        return _img;
+//        return _img;
     }
     
     NSDictionary *dic = [_mainFileWrapper fileWrappers];
@@ -152,9 +155,10 @@ NSString *imageName = @"imageName";
     }
 
     if (_imageFileWrapper) {
+        
         NSData *data = [_imageFileWrapper regularFileContents];
         
-        _img = [UIImage imageWithData:data];
+        _img = [UIImage imageWithData:self.imageData];
     }
     return _img;
 
@@ -162,19 +166,19 @@ NSString *imageName = @"imageName";
 
 
 
-- (void)saveToURL:(NSURL *)url forSaveOperation:(UIDocumentSaveOperation)saveOperation completionHandler:(void (^)(BOOL))completionHandler
-{
-    [super saveToURL:url forSaveOperation:saveOperation completionHandler:^(BOOL success){
-        if (success) {
-            
-            
-            NSLog(@"===========");
-            
-            
-        }
-    }
-     ];
-}
+//- (void)saveToURL:(NSURL *)url forSaveOperation:(UIDocumentSaveOperation)saveOperation completionHandler:(void (^)(BOOL))completionHandler
+//{
+//    [super saveToURL:url forSaveOperation:saveOperation completionHandler:^(BOOL success){
+//        if (success) {
+//            
+//            
+//            NSLog(@"===========");
+//            
+//            
+//        }
+//    }
+//     ];
+//}
 
 
 

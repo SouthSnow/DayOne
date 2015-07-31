@@ -141,7 +141,15 @@
     _iamgeView.image = [UIImage imageWithData:imageData];
     _iamgeView.image = theImage;
     _document.myImage = theImage;
+    _document.imageData = imageData;
     [picker dismissViewControllerAnimated:YES completion:^{}];
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations{
+    
+    return UIInterfaceOrientationMaskPortrait;
+    
 }
 
 @end

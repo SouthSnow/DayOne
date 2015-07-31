@@ -19,7 +19,7 @@
 @property (nonatomic, copy) NSString *documentText;
 @property (nonatomic, strong) UIImage * myImage;
 @property (nonatomic, copy) NSString *imageStr;
-
+@property (nonatomic, strong) NSData *imageData;
 
 @end
 
